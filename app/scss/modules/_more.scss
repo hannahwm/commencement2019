@@ -1,0 +1,24 @@
+
+//masonry styles
+// .masonry-container .inner-post {
+//   width: 33%;
+//   overflow: hidden;
+// }
+
+.masonry-sizer {
+  width: calc(33% - 20px);
+}
+
+
+.masonry-container .article-body {
+  margin: 100px auto; }
+
+.masonry-container .article-body:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+.masonry-container .masonry-sizer {
+    width: 10%;
+  }

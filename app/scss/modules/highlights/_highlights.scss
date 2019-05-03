@@ -1,0 +1,36 @@
+#highlights {}
+
+.highlights-content {
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 20px;
+  }
+
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+.highlights-content__left {
+  display: block;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    float: left;
+    width: calc(100% - 300px);
+    padding-right: 40px;
+  }
+}
+
+.highlights-content__right {
+  display: block;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    float: left;
+    width: 300px;
+  }
+}

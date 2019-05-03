@@ -1,0 +1,165 @@
+.latest-stories {
+
+  .com-read-more {
+    position: absolute;
+    bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      bottom: 25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      bottom: 0;
+    }
+  }
+
+}
+
+.latest-stories__story {
+  width: 100%;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $mediumGrey;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    border-bottom: 0;
+    max-height: 265px;
+    overflow: hidden;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+  > a {
+    display: block;
+    width: 400px;
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      max-width: 600px;
+      &:before,
+      &:after {
+        display: table;
+        content: " ";
+        clear: both;
+      }
+    }
+  }
+
+  > p,
+  a > p {
+    margin: 0;
+    line-height: 0;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+.latest-stories__image {
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 600px;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    float: left;
+    width: 400px;
+    vertical-align: top;
+  }
+
+  ~ .latest-stories__content {
+    @media screen and (min-width: 1200px) {
+      height: 200px;
+    }
+  }
+
+  &--media {
+    display: table;
+    height: 100%;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 0 20px;
+    }
+
+
+    img {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      margin: 0 auto 20px;
+      max-width: 100%;
+      outline: 0;
+
+      @media screen and (min-width: 600px) and (max-width: 1200px) {
+        margin: 0 0 20px;
+        max-width: 600px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        max-width: 400px;
+      }
+
+    }
+  }
+}
+
+.latest-stories__video {
+  width: 100%;
+}
+
+.latest-stories__content {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  padding-bottom: 70px;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    float: left;
+    width: calc(100% - 400px);
+    height: 264px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    min-height: 250px;
+  }
+}
+
+.latest-stories__title {
+  @include sectionSubheader;
+}
+
+.latest-stories__teaser {
+  @include bodyText;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 23px;
+  }
+
+  ~ p {
+    margin: 0;
+    line-height: 0;
+  }
+}

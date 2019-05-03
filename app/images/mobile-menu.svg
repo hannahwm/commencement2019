@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="15px" viewBox="0 0 25 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Mobile" transform="translate(-287.000000, -161.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="header" transform="translate(0.000000, 1.000000)">
+                <g id="Group" transform="translate(288.000000, 160.000000)">
+                    <path d="M0.5,1 L22.5,1" id="Line"></path>
+                    <path d="M0.5,8 L22.5,8" id="Line-Copy"></path>
+                    <path d="M0.5,14 L22.5,14" id="Line-Copy-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

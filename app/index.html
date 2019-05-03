@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Commencement 2019</title>
+      <link rel="stylesheet" href="css/styles.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.1/ScrollMagic.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+
+  <body>
+
+
+    <div class="com-wrapper">
+      <button class="scrollup" aria-label="scroll to top"></button>
+      @@include('modules/header.html')
+      <!-- @@include('modules/countdown.html') -->
+      <div class="start">show scroll arrow</div>
+
+      @@include('modules/highlights/highlights.html')
+      @@include('modules/latest/latest.html')
+      <!-- @@include('modules/media.html') -->
+      @@include('modules/in-photos.html')
+      @@include('modules/speakers.html')
+      @@include('modules/honorary.html')
+      <!-- @@include('modules/student.html') -->
+      @@include('modules/arrival.html')
+      <!-- @@include('modules/more.html') -->
+      <div class="stop">hide scroll arrow</div>
+
+    </div>
+
+    <!--build:js js/main.min.js -->
+    <script src="js/scrollmagicControls.js"></script>
+    <script src="js/scrollMessage.js"></script>
+    <script src="js/navMenu.js"></script>
+    <script src="js/main.js"></script>
+    <!--endbuild-->
+
+  </body>
+</html>

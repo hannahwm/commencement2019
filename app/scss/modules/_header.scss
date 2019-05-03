@@ -1,0 +1,288 @@
+.com-header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  box-sizing: border-box;
+
+  .show-article-nav ~ .article-content & {
+    z-index: 4;
+  }
+}
+
+.com-banner {
+  height: 83vw;
+  padding-top: 40vw;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 600px) {
+    padding-top: 25vw;
+    height: 55vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 48vw;
+    padding-top: 17vw;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 10.8vw;
+    height: 40vw;
+  }
+
+  h1 {
+    margin: 0;
+    font-family: $primary-title;
+    text-transform: uppercase;
+    font-size: 52px;
+    line-height: 52px;
+    color: $white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+
+    @media screen and (min-width: 375px) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    @media screen and (min-width: 600px) {
+      font-size: 90px;
+      line-height: 90px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 120px;
+      line-height: 120px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 160px;
+      line-height: 160px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 200px;
+      line-height: 200px;
+    }
+
+    @media screen and (min-width: 1400px) {
+      font-size: 240px;
+      line-height: 180px;
+    }
+  }
+}
+
+.com-intro {
+  margin: 0 auto;
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  width: calc(100% - 40px);
+  padding: 10px;
+  // border: 3px solid $black;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 400px) {
+    width: 350px;
+  }
+
+  @media screen and (min-width: 600px) {
+    width: calc(100% - 40px);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 15px 0;
+    width: 700px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 15px;
+    width: 920px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1300px;
+  }
+
+  p {
+    font-family: $lato;
+    font-size: 10px;
+    line-height: 1.25em;
+    color: $black;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (min-width: 375px) {
+      font-size: 12px;
+    }
+
+    @media screen and (min-width: 600px) {
+      font-size: 11px;
+      line-height: 1em;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+
+}
+
+.com-nav-wrapper {
+
+  @media screen and (min-width: 768px) {
+    height: 3.5vw;
+    margin-bottom: 3.4vw;
+  }
+}
+
+.com-nav {
+  position: absolute;
+  z-index: 9;
+  top: 93px;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.6s ease;
+
+  p {
+    margin: 0;
+    line-height: 0;
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    bottom: auto;
+    height: 52px;
+  }
+}
+
+.show-article-nav ~ .article-content .com-nav.fixed {
+  top: 35px;
+}
+
+.com-nav__links {
+  position: absolute;
+  top: 28px;
+  display: none;
+  background-color: $black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+
+  &.active {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: auto;
+    display: flex;
+    height: 52px;
+    justify-content: space-evenly;
+    background-color: $navBg;
+  }
+
+  > p {
+    display: none;
+  }
+
+  li {
+
+    @media screen and (min-width: 768px) {
+      height: 52px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      padding: 0 10px;
+      text-align: center;
+    }
+  }
+}
+
+.nav-link {
+  position: relative;
+  display: block;
+  font-family: $trim-poster;
+  font-size: 20px;
+  line-height: 30px;
+  color: $white;
+  height: 40px;
+  padding: 5px 10px 5px 20px;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: left;
+  outline: none;
+
+  &.active,
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    height: 52px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 52px;
+    color: $black;
+
+    &.active,
+    &:hover {
+      text-decoration: none;
+
+      &::after {
+        display: block;
+        position: absolute;
+        bottom: 8px;
+        content: "";
+        background-color: $red;
+        width: 100%;
+        height: 3px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 32px;
+    line-height: 52px;
+
+  }
+
+}
+
+.com-nav__mobileBtn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: block;
+  width: 40px;
+  height: 30px;
+  background: url("/interactive/2019/05/commencement2019/images/mobile-menu.svg") no-repeat center $black;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+
+  @media screen and (min-width: 375px) {
+    top: 5px;
+    right: 5px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

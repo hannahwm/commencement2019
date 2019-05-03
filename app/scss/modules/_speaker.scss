@@ -1,0 +1,86 @@
+.speaker {
+  margin-bottom: 50px;
+
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+  > p {
+    margin: 0;
+  }
+}
+
+.speaker--right .com-read-more {
+  right: 40px;
+}
+
+.speaker__content {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    float: left;
+    width: calc(100% - 300px);
+    min-height: 300px;
+    padding-left: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% - 400px);
+    padding-left: 40px;
+  }
+
+  .speaker--right & {
+    float: right;
+    padding-left: 0;
+    padding-right: 40px;
+  }
+}
+
+.speaker__image {
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    float: left;
+    width: 300px;
+    vertical-align: top;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 400px;
+  }
+
+  .speaker--right & {
+    float: right;
+  }
+}
+
+.speaker__title {
+  @include sectionSubheader;
+  color: inherit;
+}
+
+.speaker__teaser {
+  @include bodyText;
+  color: inherit;
+}
+
+.speaker__subline {
+  text-transform: uppercase;
+  font-family: $lato;
+  font-size: 12px;
+  color: inherit;
+  line-height: 27px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
